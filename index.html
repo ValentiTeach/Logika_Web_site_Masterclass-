@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LOGIKA SCHOOL // Майстер-клас з Веб-розробки</title>
 <meta name="description" content="Майстер-клас Logika School — побудуй свій перший сайт за 10 трендами фронтенд-розробки">
+<meta name="theme-color" content="#7C3AED">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,17 +16,23 @@
 <!-- ========== TOP BAR ========== -->
 <div class="topbar">
   <div><span class="live">EFIR</span>&nbsp;//&nbsp;LOGIKA SCHOOL // ФІЛІЯ КОЛОМИЯ</div>
-  <div class="topbar-right">WEB-DEV WORKSHOP // V.2.0 // 2026</div>
+  <div class="topbar-right">WEB-DEV WORKSHOP // V.2.1 // 2026</div>
 </div>
 
 <!-- ========== BRAND BAR ========== -->
 <div class="brand-bar">
   <a href="https://logikaschool.com" target="_blank" rel="noopener" class="logo-link">
     <div class="logo-mark">
-      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="2" width="56" height="56" rx="14" fill="#FF6B35" stroke="#0A0A0A" stroke-width="3"/>
-        <path d="M18 14 L18 46 L42 46" stroke="#FFF6E5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <circle cx="42" cy="46" r="4" fill="#C4F542" stroke="#0A0A0A" stroke-width="2"/>
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stop-color="#A78BFA"/>
+            <stop offset="100%" stop-color="#5B21B6"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="64" height="64" rx="16" fill="url(#logoGrad)"/>
+        <path d="M20 16 L20 48 L44 48" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="44" cy="48" r="5" fill="#FBBF24" stroke="#fff" stroke-width="2"/>
       </svg>
     </div>
     <div class="logo-text">
@@ -36,8 +43,8 @@
 
   <div class="brand-stats">
     <div class="stat"><b>178</b><span>ШКІЛ В УКРАЇНІ</span></div>
-    <div class="stat"><b>50K+</b><span>ВИПУСКНИКІВ</span></div>
-    <div class="stat"><b>2018</b><span>З РОКУ ЗАСНУВАННЯ</span></div>
+    <div class="stat stat-2"><b>50K+</b><span>ВИПУСКНИКІВ</span></div>
+    <div class="stat stat-3"><b>2018</b><span>З РОКУ ЗАСНУВАННЯ</span></div>
   </div>
 
   <div class="socials">
@@ -126,10 +133,10 @@
   <div class="foot-grid">
     <div class="foot-col">
       <div class="foot-logo">
-        <svg viewBox="0 0 60 60" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-          <rect x="2" y="2" width="56" height="56" rx="14" fill="#FF6B35" stroke="#FFF6E5" stroke-width="3"/>
-          <path d="M18 14 L18 46 L42 46" stroke="#FFF6E5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <circle cx="42" cy="46" r="4" fill="#C4F542" stroke="#FFF6E5" stroke-width="2"/>
+        <svg viewBox="0 0 64 64" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="64" height="64" rx="16" fill="#7C3AED"/>
+          <path d="M20 16 L20 48 L44 48" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="44" cy="48" r="5" fill="#FBBF24" stroke="#fff" stroke-width="2"/>
         </svg>
         <strong>LOGIKA SCHOOL</strong>
       </div>
@@ -161,7 +168,7 @@
   <div class="foot-bottom">
     <span>© 2026 LOGIKA SCHOOL // KOLOMYIA</span>
     <span class="heart">●</span>
-    <span>WEB-DEV WORKSHOP V.2</span>
+    <span>WEB-DEV WORKSHOP V.2.1</span>
   </div>
 </footer>
 
