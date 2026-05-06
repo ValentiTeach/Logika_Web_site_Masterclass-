@@ -1,5 +1,5 @@
 /* ============================================================
-   LOGIKA SCHOOL // WEB-DEV WORKSHOP V.2
+   LOGIKA SCHOOL // WEB-DEV WORKSHOP V.2.1
    ============================================================ */
 
 const TASKS = [
@@ -409,17 +409,17 @@ const TASKS = [
     topic: "Сторінка мобільної гри в App Store",
     topicDesc: "Зроби сторінку гри як в магазині додатків: іконка, назва, рейтинг, скріншоти, опис, кнопка завантажити.",
     palette: [
-      { c: "#FF6B35", t: "#fff" },
-      { c: "#FF006E", t: "#fff" },
+      { c: "#7C3AED", t: "#fff" },
+      { c: "#EC4899", t: "#fff" },
       { c: "#F2F2F7", t: "#000" },
-      { c: "#FFFFFF", t: "#FF6B35" }
+      { c: "#FFFFFF", t: "#7C3AED" }
     ],
     template: `<!DOCTYPE html>
 <html>
 <head><title>Мобільна Гра</title></head>
 <body style="background:#F2F2F7; font-family:-apple-system, Arial; padding:0; margin:0;">
 
-  <div style="background:linear-gradient(135deg,#FF6B35,#FF006E); padding:60px 20px 80px; color:#fff; text-align:center;">
+  <div style="background:linear-gradient(135deg,#7C3AED,#EC4899); padding:60px 20px 80px; color:#fff; text-align:center;">
     <img src="https://picsum.photos/130/130?random=12" width="130" style="border-radius:30px; box-shadow:0 15px 40px rgba(0,0,0,0.3);">
 
     <h1 style="font-size:38px; margin:20px 0 5px;">SUBWAY ULTRA</h1>
@@ -430,7 +430,7 @@ const TASKS = [
 
   <div style="max-width:600px; margin:-40px auto 0; padding:0 20px;">
 
-    <p style="background:#fff; color:#FF6B35; padding:18px 32px; text-align:center; border-radius:15px; font-weight:bold; font-size:20px; box-shadow:0 5px 20px rgba(0,0,0,0.1);">📲 ЗАВАНТАЖИТИ БЕЗКОШТОВНО</p>
+    <p style="background:#fff; color:#7C3AED; padding:18px 32px; text-align:center; border-radius:15px; font-weight:bold; font-size:20px; box-shadow:0 5px 20px rgba(0,0,0,0.1);">📲 ЗАВАНТАЖИТИ БЕЗКОШТОВНО</p>
 
     <div style="background:#fff; padding:25px; border-radius:15px; margin-top:20px; box-shadow:0 5px 20px rgba(0,0,0,0.05);">
 
@@ -457,7 +457,7 @@ const REMINDERS = [
   "&lt;br&gt; — перенесення рядка"
 ];
 
-const CONFETTI_COLORS = ["#FF3D81", "#C4F542", "#4D7CFF", "#FFD60A", "#FF6B35", "#9B5DE5"];
+const CONFETTI_COLORS = ["#7C3AED", "#EC4899", "#FBBF24", "#06B6D4", "#A3E635", "#A78BFA"];
 
 const opened = new Set();
 
@@ -576,7 +576,7 @@ function openTask(num) {
       </div>
 
       <div class="topic-card">
-        <div class="section-label" style="color:#fff; opacity:0.85;">Завдання</div>
+        <div class="section-label">Завдання</div>
         <h3>${t.topic}</h3>
         <p>${t.topicDesc}</p>
       </div>
@@ -673,10 +673,12 @@ function showToast() {
 document.getElementById("randomPick").addEventListener("click", () => {
   const remaining = TASKS.filter(t => !opened.has(t.num));
   if (remaining.length === 0) {
-    showToast();
-    document.getElementById("toast").textContent = "УСІ КАРТКИ ВЖЕ ВІДКРИТІ ✓";
+    const toast = document.getElementById("toast");
+    toast.textContent = "УСІ КАРТКИ ВЖЕ ВІДКРИТІ ✓";
+    toast.classList.add("show");
     setTimeout(() => {
-      document.getElementById("toast").textContent = "КОД СКОПІЙОВАНО ✓";
+      toast.classList.remove("show");
+      setTimeout(() => { toast.textContent = "КОД СКОПІЙОВАНО ✓"; }, 300);
     }, 2200);
     return;
   }
