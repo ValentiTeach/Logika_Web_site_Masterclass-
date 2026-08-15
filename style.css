@@ -1,7 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* === LOGIKA BRAND PALETTE === */
+  /* === PALETTE === */
   --bg: #F5F3FF;            /* very light lavender background */
   --paper: #FFFFFF;          /* pure white surfaces */
   --ink: #1F0F3D;            /* deep dark purple, almost black */
