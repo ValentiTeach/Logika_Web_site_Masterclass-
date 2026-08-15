@@ -1,7 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* === LOGIKA BRAND PALETTE === */
+  /* === PALETTE === */
   --bg: #F5F3FF;            /* very light lavender background */
   --paper: #FFFFFF;          /* pure white surfaces */
   --ink: #1F0F3D;            /* deep dark purple, almost black */
@@ -131,25 +131,6 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
   letter-spacing: 0.08em;
   text-align: center;
-}
-
-.socials { display: flex; gap: 8px; }
-.socials a {
-  width: 38px; height: 38px;
-  background: var(--paper);
-  border: 3px solid var(--ink);
-  box-shadow: 3px 3px 0 var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink);
-  transition: transform 0.15s, background 0.15s, color 0.15s, box-shadow 0.15s;
-}
-.socials a:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 var(--primary);
-  background: var(--primary);
-  color: var(--paper);
 }
 
 /* ============ DECO FLOATING ============ */
@@ -534,7 +515,8 @@ footer {
 .foot-col p a:hover { color: var(--paper); border-color: var(--paper); }
 
 .foot-socials { display: flex; flex-direction: column; gap: 6px; }
-.foot-socials a {
+.foot-socials a,
+.foot-socials span {
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   font-weight: 700;
