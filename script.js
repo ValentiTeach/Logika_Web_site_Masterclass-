@@ -1,5 +1,5 @@
 /* ============================================================
-   LOGIKA SCHOOL // WEB-DEV WORKSHOP V.2.1
+   WEB-DEV WORKSHOP V.2.1
    ============================================================ */
 
 const TASKS = [
@@ -19,12 +19,12 @@ const TASKS = [
     ],
     template: `<!DOCTYPE html>
 <html>
-<head><title>Logika Craft</title></head>
+<head><title>Pixel Craft</title></head>
 <body style="background:#3F2615; color:#fff; font-family:'Courier New', monospace; margin:0;">
 
   <div style="background:#5C9F38; padding:40px 20px; text-align:center; border-bottom:8px solid #2D5016;">
-    <h1 style="font-size:54px; text-shadow:4px 4px 0 #000; margin:0; letter-spacing:4px;">⛏ LOGIKA CRAFT ⛏</h1>
-    <h2 style="background:#000; color:#5C9F38; display:inline-block; padding:10px 20px; margin-top:15px;">IP: play.logikacraft.ua</h2>
+    <h1 style="font-size:54px; text-shadow:4px 4px 0 #000; margin:0; letter-spacing:4px;">⛏ PIXEL CRAFT ⛏</h1>
+    <h2 style="background:#000; color:#5C9F38; display:inline-block; padding:10px 20px; margin-top:15px;">IP: play.pixelcraft.ua</h2>
   </div>
 
   <div style="padding:30px; max-width:700px; margin:auto;">
